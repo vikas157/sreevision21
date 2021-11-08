@@ -419,28 +419,27 @@ input::-webkit-input-placeholder {
 }
 .header.sticky {
   border-bottom: 1px solid #fff;
-  background: #000529; /* Old browsers */
-  background: -moz-linear-gradient(
-    left,
-    #000529 1%,
-    #002055 24%,
-    #005db5 67%,
-    #0074d9 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    left,
-    #000529 1%,
-    #002055 24%,
-    #005db5 67%,
-    #0074d9 100%
-  ); /* Chrome10-25,Safari5.1-6 */
+  background: hsla(0, 0%, 0%, 1);
+
   background: linear-gradient(
-    to right,
-    #000529 1%,
-    #002055 24%,
-    #005db5 67%,
-    #0074d9 100%
+    180deg,
+    hsla(0, 0%, 0%, 1) 0%,
+    hsla(0, 0%, 50%, 0.9) 90%
   );
+
+  background: -moz-linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 1) 0%,
+    hsla(0, 0%, 50%, 0.9) 90%
+  );
+
+  background: -webkit-linear-gradient(
+    180deg,
+    hsla(0, 0%, 0%, 1) 0%,
+    hsla(0, 0%, 50%, 0.9) 90%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#808080", GradientType=1 );
 }
 .header.sticky {
   padding: 10px 0;
@@ -582,12 +581,24 @@ input::-webkit-input-placeholder {
   bottom: 0;
   background: hsla(29, 53%, 41%, 1);
 
-  background: linear-gradient(180deg, hsla(29, 53%, 41%, 1) 0%, hsla(53, 83%, 55%, 0.9) 90%);
-  
-  background: -moz-linear-gradient(180deg, hsla(29, 53%, 41%, 1) 0%, hsla(53, 83%, 55%, 0.9) 90%);
-  
-  background: -webkit-linear-gradient(180deg, hsla(29, 53%, 41%, 1) 0%, hsla(53, 83%, 55%, 0.9) 90%);
-  
+  background: linear-gradient(
+    180deg,
+    hsla(29, 53%, 41%, 1) 0%,
+    hsla(53, 83%, 55%, 0.9) 90%
+  );
+
+  background: -moz-linear-gradient(
+    180deg,
+    hsla(29, 53%, 41%, 1) 0%,
+    hsla(53, 83%, 55%, 0.9) 90%
+  );
+
+  background: -webkit-linear-gradient(
+    180deg,
+    hsla(29, 53%, 41%, 1) 0%,
+    hsla(53, 83%, 55%, 0.9) 90%
+  );
+
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#9E6631", endColorstr="#EBD42D", GradientType=1 );
   z-index: -1;
   position: absolute;
