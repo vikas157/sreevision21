@@ -419,27 +419,28 @@ input::-webkit-input-placeholder {
 }
 .header.sticky {
   border-bottom: 1px solid #fff;
-  background: hsla(0, 0%, 0%, 1);
-
-  background: linear-gradient(
-    180deg,
-    hsla(0, 0%, 0%, 1) 0%,
-    hsla(0, 0%, 50%, 0.9) 90%
+  background: #000529; /* Old browsers */
+  background-image: -moz-linear-gradient(
+    left,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  ); /* FF3.6-15 */
+  background-image: -webkit-linear-gradient(
+    left,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background-image: linear-gradient(
+    to right,
+    #000529 1%,
+    #002055 24%,
+    #005db5 67%,
+    #0074d9 100%
   );
-
-  background: -moz-linear-gradient(
-    180deg,
-    hsla(0, 0%, 0%, 1) 0%,
-    hsla(0, 0%, 50%, 0.9) 90%
-  );
-
-  background: -webkit-linear-gradient(
-    180deg,
-    hsla(0, 0%, 0%, 1) 0%,
-    hsla(0, 0%, 50%, 0.9) 90%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#808080", GradientType=1 );
 }
 .header.sticky {
   padding: 10px 0;
@@ -454,9 +455,20 @@ input::-webkit-input-placeholder {
 /*--------------------------------------
 -------- HERO AREA CSS START --------
 ---------------------------------------*/
+@media (min-width: 575.98px) and (max-width: 767.98px) {
+  .hero-area {
+    padding-top: 680px;
+    position: relative;
+    background-image: url(../img/sv-mo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: cover;
+    overflow: hidden;
+  }
+}
 .hero-area {
   padding-top: 680px;
-
   position: relative;
   background-image: url(../img/hero.jpg);
   background-repeat: no-repeat;
@@ -579,28 +591,27 @@ input::-webkit-input-placeholder {
   opacity: 0.85;
   right: 0;
   bottom: 0;
-  background: #000529; /* Old browsers */
-  background: -moz-linear-gradient(
-    left,
-    #000529 1%,
-    #002055 24%,
-    #005db5 67%,
-    #0074d9 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    left,
-    #000529 1%,
-    #002055 24%,
-    #005db5 67%,
-    #0074d9 100%
-  ); /* Chrome10-25,Safari5.1-6 */
+  background: hsla(217, 100%, 50%, 1);
+
   background: linear-gradient(
-    to right,
-    #000529 1%,
-    #002055 24%,
-    #005db5 67%,
-    #0074d9 100%
+    90deg,
+    hsla(217, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
   );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(217, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(217, 100%, 50%, 1) 0%,
+    hsla(186, 100%, 69%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0061FF", endColorstr="#60EFFF", GradientType=1 );
   z-index: -1;
   position: absolute;
 }
