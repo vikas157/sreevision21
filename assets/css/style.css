@@ -466,14 +466,13 @@ input::-webkit-input-placeholder {
   background-size: cover;
   overflow: hidden;
 }
-@media (min-width: 575.98px) and (max-width: 767.98px) {
+@media only screen and (max-width: 768px) {
   .hero-area {
     padding-top: 680px;
     position: relative;
     background-image: url(../img/sv-mo.jpg);
     background-repeat: no-repeat;
     background-position: center;
-
     background-size: cover;
     overflow: hidden;
   }
