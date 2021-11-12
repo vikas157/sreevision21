@@ -455,6 +455,17 @@ input::-webkit-input-placeholder {
 /*--------------------------------------
 -------- HERO AREA CSS START --------
 ---------------------------------------*/
+
+.hero-area {
+  padding-top: 680px;
+  position: relative;
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-size: cover;
+  overflow: hidden;
+}
 @media (min-width: 575.98px) and (max-width: 767.98px) {
   .hero-area {
     padding-top: 680px;
@@ -466,16 +477,6 @@ input::-webkit-input-placeholder {
     background-size: cover;
     overflow: hidden;
   }
-}
-.hero-area {
-  padding-top: 680px;
-  position: relative;
-  background-image: url(../img/hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-
-  background-size: cover;
-  overflow: hidden;
 }
 .hero-area::before {
   content: "";
