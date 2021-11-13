@@ -459,7 +459,7 @@ input::-webkit-input-placeholder {
 .hero-area {
   padding-top: 680px;
   position: relative;
-  background-image: url(../img/hero.jpg);
+  background-image: url(../img/hero2.jpg);
   background-repeat: no-repeat;
   background-position: center;
 
@@ -468,13 +468,7 @@ input::-webkit-input-placeholder {
 }
 @media only screen and (max-width: 768px) {
   .hero-area {
-    padding-top: 680px;
-    position: relative;
-    background-image: url(../img/sv-mo3.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    overflow: hidden;
+    background-image: url(../img/heromo2.jpg);
   }
 }
 .hero-area::before {
