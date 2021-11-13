@@ -468,7 +468,7 @@ input::-webkit-input-placeholder {
 }
 @media only screen and (max-width: 768px) {
   .hero-area {
-    background-image: url(../img/heromo2.jpg);
+    background-image: url(../img/herof.jpg);
   }
 }
 .hero-area::before {
